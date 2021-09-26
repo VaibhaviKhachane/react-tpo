@@ -4,19 +4,13 @@ import { FaAtlassian, FaAngrycreative } from 'react-icons/fa';
 import { AiOutlineGooglePlus, AiFillApple } from 'react-icons/ai';
 import {DiGithubAlt } from 'react-icons/di';
 
-const style = {fontSize: '4rem'}
-
 const Login = () => {
   return (
     <div className="box">
       <div className="lside">
         <div className="left">
-          <FaAtlassian
-            style={{
-              fontSize: '10rem',
-            }}
-          />
-          <FaAngrycreative style={{ fontSize: '9.5rem' }} />
+          <FaAtlassian className="icon"/>
+          <FaAngrycreative className="icon" />
         </div>
       </div>
       <div className="right">
@@ -29,12 +23,12 @@ const Login = () => {
       <div className="bottom">
         <ul>
           <li>
-            <AiOutlineGooglePlus style={style }/>
+            <AiOutlineGooglePlus className="style"/>
           </li>
           <li>
-            <AiFillApple style={style }/>
+            <AiFillApple className="style"/>
           </li>
-          <li><DiGithubAlt style={style }/> </li>
+          <li><DiGithubAlt className="style"/> </li>
         </ul>
       </div>
     </div>

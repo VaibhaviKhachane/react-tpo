@@ -1,13 +1,12 @@
-.box{
+.box {
   position: relative;
-  top:50%;
-  left:50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width:80%;
+  width: 80%;
   height: 50%;
   margin: 1rem;
   padding: 5rem;
@@ -15,18 +14,25 @@
   border-radius: 9px;
   color: #fefefe;
 }
+.icon {
+  font-size: 9.7rem;
+}
 
-.box .lside, .right > form {
+.style {
+  font-size: 4rem;
+}
+
+.box .lside,
+.right > form {
   display: grid;
   place-items: center;
 }
 
-.box .lside  {
+.box .lside {
   width: 20%;
   height: 100%;
 }
 .box .right > form > input {
-  
   padding-bottom: 10px;
   margin-bottom: 1.5rem;
   outline: none;
@@ -36,18 +42,18 @@
   color: #fefefe;
 }
 
-.box .right > form > input[type="submit"]{
+.box .right > form > input[type='submit'] {
   border: none;
-  background-color: #A2CDCD;
+  background-color: #a2cdcd;
   padding: 0.6rem;
   border-radius: 9%;
 }
 
 .box .right > form > input:hover {
-  content: "";
-  border-bottom: 1px solid #F9D5A7;
+  content: '';
+  border-bottom: 1px solid #f9d5a7;
 }
-.box .right> form > input[type="submit"]:hover{
+.box .right > form > input[type='submit']:hover {
   border: none;
 }
 
@@ -56,7 +62,7 @@
   align-items: center;
   justify-content: space-around;
 }
-.bottom > ul{
+.bottom > ul {
   list-style: none;
   display: flex;
   align-items: center;
@@ -66,4 +72,33 @@
 
 .bottom > ul > li {
   padding: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  .box {
+    width: 90%;
+    margin: auto;
+    left: 45%;
+    display: block;
+  }
+  .lside {
+    position: absolute;
+    left: 3%;
+    top: -3%
+  }
+  .right {
+    position: absolute;
+    right: 4%;
+    top: 30%;
+  }
+  .icon {
+    font-size: 4.5rem;
+  }
+  .style {
+    font-size: 2rem;
+  }
+  .bottom > ul  {
+    position:absolute;
+    top:85%;
+  }
 }
